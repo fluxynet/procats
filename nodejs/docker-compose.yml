@@ -5,6 +5,14 @@ volumes:
     driver: local
 
 services:
+  node:
+    build:
+      context: .
+      dockerfile:  docker/node/Dockerfile
+    ports:
+      - "8001:8001"
+    volumes:
+      - ".:/var/www/"
   postgres:
     image: postgres:10
     ports:

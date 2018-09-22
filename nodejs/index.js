@@ -18,10 +18,10 @@ const tplCats = handlebars.compile(
 function homepageHandler(req, res) {
 	const pool = new Pool({
 		user: "fx",
-		host: "127.0.0.1",
+		host: "postgres",
 		database: "fx",
 		password: "fx",
-		port: 8031
+		port: 5432
 	});
 
 	// we can delegate updating stats table in a separate thread

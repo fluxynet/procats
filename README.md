@@ -20,8 +20,8 @@ Create a simple website with 2 endponts:
 - Once the code is compiled it can run without any external dependencies; except for the template files already included.
 
 ## NodeJS
-- The nodejs runtime must be present to execute the program. It must support the language features used in the script.
-- Be sure to run `npm install` within the `nodejs` directory for external dependencies (database drivers, and sadly, handlebars).
+- Nodejs has been made to run within docker image containing `node` installation with pre-executed `npm install`.
+- This approach is to make it easier for you to run the code, but bear in mind that setting up such an environment with appropriate node version would be system admin responsibility.
 
 ## PHP
 - The PHP stack was the hardest to set up. Rather than giving steps to run for the setup, the `docker-compose.yml` and appropriate `Dockerfiles` have been included.

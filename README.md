@@ -2,7 +2,7 @@
 Proverbs and Cats to compare GoLang to nodejs and php
 
 This is a simple website implemented in several programming languages:
-- Go (11)
+- Go (1.11)
 - NodeJS (9.4)
 - PHP (7.1)
 

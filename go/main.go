@@ -75,6 +75,10 @@ func init() {
 }
 
 func main() {
+	// statements using defer keyword are guaranteed to execute when the function body is done
+	// they execute on a LIFO basis
+	defer db.Close()
+	
 	// http multiplexer, will handle routing for us
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", homepageHandler)
@@ -109,6 +113,8 @@ func homepageHandler(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
+	// statements using defer keyword are guaranteed to execute when the function body is done
+	// they execute on a LIFO basis
 	defer rows.Close()
 	for rows.Next() {
 		var proverb Proverb

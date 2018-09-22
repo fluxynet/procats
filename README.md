@@ -16,7 +16,16 @@ Create a simple website with 2 endponts:
 
 # Implementations
 
-## GoLang
+NodeJS and PHP include docker-compose configuration such that all dependencies are preloaded; run `docker-compose up -d` in the respective directories in order ot start them.
+
+For Go, [install Go 1.11](https://golang.org/dl/), and run the following to start: `docker-compose up -d && go build && ./go`
+
+The websites run on the following ports:
+- Go `http://127.0.0.1:8000` (database accessible via `port 8010`)
+- NodeJS `http://127.0.0.1:8001` (database accessible via `port 8011`)
+- PHP `http://127.0.0.1:8002` (database accessible via `port 8012`)
+
+## Go
 - Once the code is compiled it can run without any external dependencies; except for the template files already included.
 
 ## NodeJS
@@ -29,4 +38,4 @@ Create a simple website with 2 endponts:
 - The docker images use alpine rather than ubuntu and `apt-get`; again for clarity onto the complexity that system admins may endure when providing tailored php environments.
 
 # Reach Out!
-The code is well-documented via inline comments; if you have any further questions, comments or corrections, be sure to ask via email `fx@fluxy.net` or, better, join us on [https://www.gophers.mu/](Gophers.mu)
+The code is well-documented via inline comments; if you have any further questions, comments or corrections, be sure to ask via email `fx@fluxy.net` or, better, join us on [Gophers.mu](https://www.gophers.mu/) 👍

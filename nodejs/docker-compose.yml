@@ -16,7 +16,7 @@ services:
   postgres:
     image: postgres:10
     ports:
-      - "8031:5432"
+      - "8011:5432"
     environment:
       - POSTGRES_USER=fx
       - POSTGRES_PASSWORD=fx

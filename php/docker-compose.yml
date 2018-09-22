@@ -22,7 +22,7 @@ services:
   postgres:
     image: postgres:10
     ports:
-      - "8010:5432"
+      - "8012:5432"
     environment:
       - POSTGRES_USER=fx
       - POSTGRES_PASSWORD=fx

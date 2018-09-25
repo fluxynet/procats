@@ -38,4 +38,4 @@ The websites run on the following ports:
 - The docker images use alpine rather than ubuntu and `apt-get`; again for clarity onto the complexity that system admins may endure when providing tailored php environments.
 
 # Reach Out!
-The code is well-documented via inline comments; if you have any further questions, comments or corrections, be sure to ask via email `fx@fluxy.net` or, better, join us on [Gophers.mu](https://www.gophers.mu/) 👍
+The code is well-documented via inline comments; if you have any further questions, comments or corrections, [let me know](http://fluxy.net/code/procats/) or join us on [Gophers.mu](https://www.gophers.mu/) 👍
